@@ -105,10 +105,7 @@ Proyecto final, modelo de predicción de pose humana bidimensional
        
     
     
-                                                                                                          
-                                                                                                          
-
+                                                                                                                                                                                                           
+![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/fourmethodsv2.gif?raw=true)
              
            
-                            
-                         
