@@ -15,16 +15,15 @@ from loaddata import load_data_qdrcn
 from loaddata import norm
 from GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
 
-wandb.init(project="GCNs with DCT", entity="chrisus",resume=False)
-
+#wandb.init(project="", entity=,resume=False) for wandb account
+'''
 wandb.config = {
   "learning_rate": 0.001,
   "epochs": 50,
   "batch_size": 16
 }
-
+'''
 # Log metrics inside your training loop to visualize model performance
-#b6b15d7ae41ef1d29c60803b57b1c021a9ab6408 key code
 #wandb.log({"loss": loss})
 
 # Optional
@@ -210,7 +209,7 @@ train_loader = DataLoader(
         num_workers=10,
         pin_memory=True)
 
-torch.save(model.state_dict(),'/home/carguedas/')
+torch.save(model.state_dict(),'save_dir/')
 
 print(">>> data loaded !")
 print(">>> train data {}".format(input_train.__len__()))
@@ -269,8 +268,8 @@ for epoch in range(start_epoch, 50):
                                        lr_now=lr_now, max_norm=True, is_cuda=is_cuda,
                                        dim_used=2, dct_n=30)
 
-        wandb.log({"learnin rate": lr_now})
-        wandb.log({"loss avarage": t_l})
+        #wandb.log({"learnin rate": lr_now})
+        #wandb.log({"loss avarage": t_l})
         ret_log = np.append(ret_log, [lr_now, t_l])
         
         head = np.append(head, ['lr', 't_l'])
@@ -278,14 +277,14 @@ for epoch in range(start_epoch, 50):
                         dct_n=64)
         ret_log = np.append(ret_log, [v_3d])
         head = np.append(head, ['v_3d'])  
-        wandb.log({"loss info": v_3d})
-        wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
-torch.save(model.state_dict(), '/home/carguedas/save_model/')
-artifact = wandb.Artifact('model', type='model')
-artifact.add_file('/home/carguedas/save_model/gcn_dct.pth')
-run=wandb.init(project="GCNs with DCT", entity="chrisus")
-run.log_artifact(artifact)
-run.join()
+        #wandb.log({"loss info": v_3d})
+        #wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
+torch.save(model.state_dict(), 'save_dir/')
+#artifact = wandb.Artifact('model', type='model')
+#artifact.add_file('')
+#run=wandb.init(project="", entity="")
+#run.log_artifact(artifact)
+#run.join()
 '''
         test_3d_temp = np.array([])
         test_3d_head = np.array([])
