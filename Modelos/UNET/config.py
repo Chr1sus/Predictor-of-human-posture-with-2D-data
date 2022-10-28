@@ -4,8 +4,8 @@ import torch
 import os
 # base path of the dataset
 # define the path to the images and masks dataset
-IMAGE_DATASET_PATH = os.path.join('/home/carguedas/encodata/32/')
-MASK_DATASET_PATH = os.path.join('/home/carguedas/encodata/64/')
+IMAGE_DATASET_PATH = os.path.join('path_of_incomplete_coded_data')
+MASK_DATASET_PATH = os.path.join('path_of_complete_coded_data')
 # define the test split
 TEST_SPLIT = 0.15
 # determine the device to be used for training and evaluation
@@ -29,7 +29,7 @@ INPUT_IMAGE_HEIGHT =8
 # define threshold to filter weak predictions
 THRESHOLD = 0.5
 # define the path to the base output directory
-BASE_OUTPUT = "/home/chrisus/Proyectofinal/GIT/Modelos/output"
+BASE_OUTPUT = "path_of_output"
 # define the path to the output serialized model, model training
 # plot, and testing image paths
 MODEL_PATH = os.path.join(BASE_OUTPUT, "unet_tgs_salt.pth")
