@@ -14,46 +14,20 @@ import os
 import numpy as np
 import wandb
 
-wandb.init(project="U-NET", entity="chrisus",resume=False)
-
+#wandb.init(project="U-NET", entity="",resume=False) wandb account
+'''
 wandb.config = {
   "learning_rate": 0.001,
   "epochs": 50,
   "batch_size": 8
 }
 # load the image and mask filepaths in a sorted manner
-
+'''
 imput = config.IMAGE_DATASET_PATH 
 omput= config.MASK_DATASET_PATH 
 
 
-'''
-def get_data(path):
-	os.chdir(path)
-	info = []
-	w=[]
-	print('reading encoded data')
-	for file in os.listdir():
-		input=np.load(file)
-		s,t,d=np.shape(input)
-		
-		if d==4:
-			rest=np.zeros((128,8))
-			for n in range(t):
-				rest[n][:4]=input[0][n]
-			w.append(rest)
-		else:
-			w.append(input[0])
-		
-		w.append(input[0])
-		#w=torch.load(file)
-		#w=w.detach().cpu().numpy()
-		w=np.transpose(w[0])
-		info.append(w)
-		w=[]
-	return info
 
-'''
 '''norm data for U-NET'''
 def get_data(path):
 	os.chdir(path)
@@ -206,9 +180,9 @@ for e in tqdm(range(config.NUM_EPOCHS)):
 	H["train_loss"].append(avgTrainLoss.cpu().detach().numpy())
 	H["test_loss"].append(avgTestLoss.cpu().detach().numpy())
 	# print the model training and validation information
-	wandb.log({"Train loss": avgTrainLoss})
-	wandb.log({"Test loss": avgTestLoss})
-	wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
+	#wandb.log({"Train loss": avgTrainLoss})
+	#wandb.log({"Test loss": avgTestLoss})
+	#wandb.save(os.path.join(wandb.run.dir, "checkpoint*"))
 	print("[INFO] EPOCH: {}/{}".format(e + 1, config.NUM_EPOCHS))
 	print("Train loss: {:.6f}, Test loss: {:.4f}".format(
 		avgTrainLoss, avgTestLoss))
