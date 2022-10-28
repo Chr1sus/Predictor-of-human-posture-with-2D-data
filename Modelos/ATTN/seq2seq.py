@@ -16,10 +16,10 @@ import wandb
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-wandb.init(project="attention", entity="chrisus")
+#wandb.init(project="", entity="") for wandb account
 
-p32='/home/chrisus/Proyectofinal/Proyect/encodata/32/'
-p64='/home/chrisus/Proyectofinal/Proyect/encodata/64/'
+p32='pathfile_of_incomplete_coded_data'
+p64='pathfile_of_complete_coded_data'
  
 def prep_data(dir):
     x=[]
@@ -124,7 +124,7 @@ def train(model, iterator, optimizer, criterion, clip,in32,in64):
         #trg=torch.tensor(trg, dtype=torch.long, device=device)
         #trg=trg.to(device=device, dtype=torch.int64)
         loss = criterion(output, trg.cuda())
-        wandb.log({"train loss": loss})
+        #wandb.log({"train loss": loss})
         loss.backward()
         
         torch.nn.utils.clip_grad_norm_(model.parameters(), clip)
@@ -165,11 +165,11 @@ def evaluate(model, iterator, criterion,in32,in64):
             
             loss = criterion(output, trg.cuda())
 
-            wandb.log({"val loss": loss})
+            #wandb.log({"val loss": loss})
 
             epoch_loss += loss.item()
     
-    wandb.log({"epoch validation loss": epoch_loss})
+    #wandb.log({"epoch validation loss": epoch_loss})
     return epoch_loss / iterator
 
 def epoch_time(start_time, end_time):
@@ -203,16 +203,16 @@ for epoch in range(N_EPOCHS):
     
     if valid_loss < best_valid_loss:
         best_valid_loss = valid_loss
-        torch.save(model.state_dict(), 'tut6-model.pt')
+        torch.save(model.state_dict(), 'saved_dir_with_file_name')
     
     print(f'Epoch: {epoch+1:02} | Time: {epoch_mins}m {epoch_secs}s')
     print(f'\tTrain Loss: {train_loss:.3f} | Train PPL: {math.exp(train_loss):7.3f}')
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. PPL: {math.exp(valid_loss):7.3f}')
-    wandb.log({"train loss per epoch": train_loss})
-    wandb.log({"validation loss per epoch": valid_loss})
+    #wandb.log({"train loss per epoch": train_loss})
+    #wandb.log({"validation loss per epoch": valid_loss})
 
 
-model.load_state_dict(torch.load('tut6-model.pt'))
+model.load_state_dict(torch.load('saved_dir_with_file_name'))
 
 
 
