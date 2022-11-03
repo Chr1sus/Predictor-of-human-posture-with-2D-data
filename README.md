@@ -32,9 +32,9 @@ Para el proyecto se debe de instalar en un ambiente de conda los requisitos del 
 
 Una vez creado el ambiente se procede a instalar los conjutos de datos y repositorios necesarios.
 
-![Conjunto de datos1](http://vision.imar.ro/human3.6m/description.php)
-![Conjunto de datos2](http://domedb.perception.cs.cmu.edu/)
-![Conjunto de dato3](http://domedb.perception.cs.cmu.edu/)
+![Conjunto de datos-Human3.6M](http://vision.imar.ro/human3.6m/description.php)
+![Conjunto de datos-Panoptics-CMU](http://domedb.perception.cs.cmu.edu/)
+![Conjunto de datos-Penn-Action](https://github.com/dreamdragon/PennAction)
 ![Dependencia:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
 
 
