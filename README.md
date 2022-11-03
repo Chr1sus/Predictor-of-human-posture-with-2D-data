@@ -3,9 +3,9 @@
 :construction: Proyecto terminado 🔚:
 </h4>
 
-![PYTHON](https://badgen.net/badge/python/3.7/blue)
-![TENSORFLOW](https://badgen.net/badge/TF/1.15.5/cyan)
-![PYTORCH](https://badgen.net/badge/PyTorch/1.6/orange)
+![PYTHON](https://badgen.net/badge/python/3.7/blue?icon=github)
+![TENSORFLOW](https://badgen.net/badge/TF/1.15.5/cyan?icon=github)
+![PYTORCH](https://badgen.net/badge/PyTorch/1.6/orange?icon=github)
 
 An aplication of human motion prediction using already existing models for two kinds of input (joints and skeleton structure with 2D data, and coded data representing the dynamic information of human motion on a sequence) with the porpose to low the latency 
 of a human body pose corrector using the motion retargeting as reference for the performance.
