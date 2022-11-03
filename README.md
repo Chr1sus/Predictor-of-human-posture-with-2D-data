@@ -12,9 +12,9 @@ of a human body pose corrector using the motion retargeting as reference for the
 
 
 - `Funcionalidad 1`: Se adiciona el predictor de pose humana al motion retargeting generando un resultado que respeta el tamnno del esqueleto como de la perspectiva
-- - `Funcionalidad 2`: Se generan datos de secuencia de movimiento con un predictor dentro del motion retargeting usando la representacion del movimiento del espacio dinamico latente
-- - `Funcionalidad 3`: Se reentrena y evalua el mejor modelo y acercamiento para el motion retargeting
-- - `Funcionalidad 4`: Se visualiza el efecto de la cantidad de cuadros de prediccion vs el porcentaje de error.
+- `Funcionalidad 2`: Se generan datos de secuencia de movimiento con un predictor dentro del motion retargeting usando la representacion del movimiento del espacio dinamico latente
+- `Funcionalidad 3`: Se reentrena y evalua el mejor modelo y acercamiento para el motion retargeting
+- `Funcionalidad 4`: Se visualiza el efecto de la cantidad de cuadros de prediccion vs el porcentaje de error.
 
 
 ![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/gcnmethodsv2.gif?raw=true)
@@ -32,10 +32,13 @@ Para el proyecto se debe de instalar en un ambiente de conda los requisitos del 
 
 Una vez creado el ambiente se procede a instalar los conjutos de datos y repositorios necesarios.
 
-![Conjunto de datos-Human3.6M](http://vision.imar.ro/human3.6m/description.php)
-![Conjunto de datos-Panoptics-CMU](http://domedb.perception.cs.cmu.edu/)
-![Conjunto de datos-Penn-Action](https://github.com/dreamdragon/PennAction)
-![Dependencia:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
+-![Conjunto de datos-Human3.6M](https://github.com/kotaro-inoue/human3.6m_downloader)
+
+-![Conjunto de datos-Panoptics-CMU](https://github.com/CMU-Perceptual-Computing-Lab/panoptic-toolbox)
+
+-![Conjunto de datos-Penn-Action](https://github.com/dreamdragon/PennAction)
+
+-![Motion Retargeting:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
 
 
 ------>Entregables:
