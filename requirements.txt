@@ -1,0 +1,139 @@
+absl-py @ file:///opt/conda/conda-bld/absl-py_1639803114343/work
+aniso8601==9.0.1
+astor==0.8.1
+autocfg==0.0.8
+autogluon.core==0.3.1
+autograd==1.4
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+bcrypt==3.2.2
+boto3==1.24.53
+botocore==1.27.53
+cachetools==4.2.4
+certifi @ file:///croot/certifi_1665076670883/work/certifi
+cffi==1.15.1
+charset-normalizer==2.1.0
+click==8.1.3
+cloudpickle==2.1.0
+ConfigArgParse @ file:///tmp/build/80754af9/configargparse_1615837118917/work
+ConfigSpace==0.4.19
+conv==0.2
+cryptography==37.0.4
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+Cython==0.29.32
+dask==2022.2.0
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+decord==0.6.0
+dill==0.3.5.1
+distributed==2022.2.0
+docker-pycreds==0.4.0
+Flask==2.1.3
+Flask-RESTful==0.3.9
+fonttools==4.35.0
+fsspec==2022.7.1
+future==0.18.2
+gast @ file:///tmp/build/80754af9/gast_1637837472536/work
+gitdb==4.0.9
+GitPython==3.1.27
+gluoncv==0.10.5.post0
+google-auth==1.35.0
+google-auth-oauthlib==0.4.6
+google-pasta @ file:///Users/ktietz/demo/mc3/conda-bld/google-pasta_1630577991354/work
+graphviz==0.8.4
+grpcio==1.49.1
+h5py @ file:///tmp/abs_4aewd3wzey/croots/recipe/h5py_1659091371897/work
+HeapDict==1.0.1
+hiddenlayer==0.3
+idna==3.3
+imageio @ file:///tmp/abs_cd920173-f360-47c5-97b0-bf4d1076d5d4dvic0oys/croots/recipe/imageio_1658785036907/work
+importlib-metadata==4.12.0
+ipython @ file:///tmp/abs_94gruux8u8/croots/recipe/ipython_1659529858706/work
+itsdangerous==2.1.2
+jedi @ file:///tmp/build/80754af9/jedi_1644299024593/work
+Jinja2==3.1.2
+jmespath==1.0.1
+joblib==1.1.0
+keras==2.10.0
+Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Preprocessing @ file:///tmp/build/80754af9/keras-preprocessing_1612283640596/work
+kiwisolver==1.4.4
+locket==1.0.0
+Markdown @ file:///tmp/build/80754af9/markdown_1614363832606/work
+MarkupSafe==2.0.1
+mat4py==0.5.0
+matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1647441664166/work
+matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-service==2.4.0
+msgpack==1.0.4
+munkres==1.1.4
+mxnet-cu102==1.9.1
+neuraxle==0.3.1
+neuraxle-tensorflow==0.1.0
+numpy @ file:///opt/conda/conda-bld/numpy_and_numpy_base_1653915516269/work
+oauthlib==3.2.1
+opencv-python==4.6.0.66
+opt-einsum==3.3.0
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.1.5
+paramiko==2.11.0
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+partd==1.3.0
+pathtools==0.1.2
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.2.0
+portalocker==2.5.1
+progress @ file:///tmp/build/80754af9/progress_1614270514501/work
+promise==2.3
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.20.1
+psutil==5.9.1
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycocotools==2.0.4
+pycparser==2.21
+Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+PyNaCl==1.5.0
+pyparsing==3.0.9
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2022.2.1
+PyYAML==6.0
+requests==2.28.1
+requests-oauthlib==1.3.1
+rsa==4.9
+s3transfer==0.6.0
+scikit-learn==0.24.2
+scipy @ file:///opt/conda/conda-bld/scipy_1661390393401/work
+sentry-sdk==1.9.5
+setproctitle==1.3.2
+shortuuid==1.0.9
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+smmap==5.0.0
+sortedcontainers==2.4.0
+spacepy==0.4.1
+tblib==1.7.0
+tensorboard==1.15.0
+tensorboardX==2.5.1
+tensorflow==1.14.0
+tensorflow-estimator==1.15.1
+tensorflow-gpu==1.15.5
+termcolor==1.1.0
+threadpoolctl==3.1.0
+toolz==0.12.0
+torch==1.6.0
+torchvision==0.7.0
+torchviz==0.0.2
+tornado==6.2
+tqdm==4.64.0
+traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typing_extensions @ file:///tmp/abs_ben9emwtky/croots/recipe/typing_extensions_1659638822008/work
+urllib3==1.26.11
+wandb==0.13.2
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
+wrapt @ file:///tmp/abs_c335821b-6e43-4504-9816-b1a52d3d3e1eel6uae8l/croots/recipe/wrapt_1657814400492/work
+yacs==0.1.8
+zict==2.2.0
+zipp==3.8.1
