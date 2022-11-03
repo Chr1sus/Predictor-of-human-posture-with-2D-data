@@ -46,101 +46,100 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 -![Motion Retargeting:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
 
 
-Entregables:
-   |
-             
-   |-Tabla_comparativa.pdf ======:Tabla comparativa del primer objetivo específico.
+📁 Entregables
+
+      |-Tabla_comparativa.pdf ======:Tabla comparativa del primer objetivo específico.
 
 
-Modelos
+📁 Modelos
 
-   |-ATTN
-                                     
-       |-ATTN.py
-                   
-       |-seq2seq.py
-                   
-   |-GCN
-                    
-       |-GCN_DCT.py
+      |-ATTN
 
-       |-main_gcn.py
-                   
-                   
-   |-Q-DRNN
-    
-       |-prediction_modelv2.py
+          |-ATTN.py
 
-       |-translatev2.py
-                   
-                  
-       
-   |-UNET
-                    
-                   
-                    
-       |-config.py
+          |-seq2seq.py
 
-       |-seg_data_.py
+      |-GCN
 
-       |-train_Unet.py
+          |-GCN_DCT.py
 
-       |-unet.py
-
-   |-pruebas.py (script de experimentos)
+          |-main_gcn.py
 
 
-Results
+      |-Q-DRNN
 
-   |-Resultados visuales del proyecto. 
+          |-prediction_modelv2.py
 
-
-ops
-
-   |-loaddata.py (script para leer datos)
-
-   |-train.py (script para producir experimentos con el Aberman)
-
-   |-tils.py
-
-   |-values_for_desnormalize
-
-   |-vizu.py
-
-retrained_models
-
-   |-Q-DRNN_MODEL
-
-      |-checkpoint
-
-      |-complete.index
-
-      |-complete.meta
-
-      |-complete.data-00000-of-00001
+          |-translatev2.py
 
 
-   |-gcn_dct.pth
 
-   |-gcn_dct_retrained.pth
+      |-UNET
 
-   |-unetv1.pth
 
-   |-bestseq2seqmodel.py
 
-tests
+          |-config.py
 
-   |-decoded_sequence (resultados del Aberman)
+          |-seg_data_.py
 
-      |------>CMU-MOCAP
+          |-train_Unet.py
 
-      |------>Penn-Action
+          |-unet.py
 
-   |-abermantest.py
+      |-pruebas.py (script de experimentos)
 
-   |-comparepredictors.py
 
-   |-finalobj
+📁 Results
+
+      |-Resultados visuales del proyecto. 
+
+
+📁 ops
+
+      |-loaddata.py (script para leer datos)
+
+      |-train.py (script para producir experimentos con el Aberman)
+
+      |-tils.py
+
+      |-values_for_desnormalize
+
+      |-vizu.py
+
+📁 retrained_models
+
+      |-Q-DRNN_MODEL
+
+         |-checkpoint
+
+         |-complete.index
+
+         |-complete.meta
+
+         |-complete.data-00000-of-00001
+
+
+      |-gcn_dct.pth
+
+      |-gcn_dct_retrained.pth
+
+      |-unetv1.pth
+
+      |-bestseq2seqmodel.py
+
+📁 tests
+
+      |-decoded_sequence (resultados del Aberman)
+
+         |------>CMU-MOCAP
+
+         |------>Penn-Action
+
+      |-abermantest.py
+
+      |-comparepredictors.py
+
+      |-finalobj
 
 
 
