@@ -11,10 +11,10 @@ An aplication of human motion prediction using already existing models for two k
 of a human body pose corrector using the motion retargeting as reference for the performance.
 
 
-- `Funcionalidad 1`: Se adiciona el predictor de pose humana al motion retargeting generando un resultado que respeta el tamnno del esqueleto como de la perspectiva
-- `Funcionalidad 2`: Se generan datos de secuencia de movimiento con un predictor dentro del motion retargeting usando la representacion del movimiento del espacio dinamico latente
-- `Funcionalidad 3`: Se reentrena y evalua el mejor modelo y acercamiento para el motion retargeting
-- `Funcionalidad 4`: Se visualiza el efecto de la cantidad de cuadros de prediccion vs el porcentaje de error.
+- `Functionality 1`: The human pose predictor is added to the motion retargeting generating a result that respects the size of the skeleton as well as the perspective.
+- `Functionality 2`: Motion sequence data is generated with a predictor within motion retargeting using the latent dynamic space representation of motion.
+- `Functionality 3`: Re-training and evaluation of the best model and approach for motion retargeting
+- `Functionality 4`: The effect of the number of prediction frames vs. the percentage error is displayed. 
 
 
 ![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/gcnmethodsv2.gif?raw=true)
@@ -24,9 +24,9 @@ of a human body pose corrector using the motion retargeting as reference for the
 ![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/FINALOBJT.png)
  
 
-\## 📁 Acceso al proyecto
+\## 📁 Access to the project
 
-Para el proyecto se debe de instalar en un ambiente de conda los requisitos del requirement.txt
+For the project, the requirements of the requirement.txt must be installed in a conda environment as following.
 
       python3 -m venv env
 
@@ -35,13 +35,13 @@ Para el proyecto se debe de instalar en un ambiente de conda los requisitos del 
       pip install -r requirements.txt
 
 
-Una vez creado el ambiente se procede a instalar los conjutos de datos y repositorios necesarios.
+Once the environment is created, the necessary data sets and repositories are installed.
 
--![Conjunto de datos-Human3.6M](https://github.com/kotaro-inoue/human3.6m_downloader)
+-![Dataset-Human3.6M](https://github.com/kotaro-inoue/human3.6m_downloader)
 
--![Conjunto de datos-Panoptics-CMU](https://github.com/CMU-Perceptual-Computing-Lab/panoptic-toolbox)
+-![Dataset-Panoptics-CMU](https://github.com/CMU-Perceptual-Computing-Lab/panoptic-toolbox)
 
--![Conjunto de datos-Penn-Action](https://github.com/dreamdragon/PennAction)
+-![Dataset-Penn-Action](https://github.com/dreamdragon/PennAction)
 
 -![Motion Retargeting:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
 
@@ -145,15 +145,15 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 
 
 
-\## 🛠️ Abre y ejecuta el proyecto
+\## 🛠️ Open and run the project
 
-Entrenamiento de los modelos: 
+Training of the models: 
 
-Para los metodos que usan de entrada el esqueleto humano con sus puntos claves, se puede utilizar los modelos de la carpeta Modelos GCN y Q-DRNN donde se debe espicificar la direccion de los datos de entrada en carpetas con nombres S1,S2,S3,S4,S5,S6,S7,S8,S9 y S11.
+For the methods that use as input the human skeleton with its key points, you can use the models from the folder Models GCN and Q-DRNNN where you should specify the address of the input data in folders with names S1,S2,S3,S4,S5,S6,S7,S8,S9 and S11.
 
-Para los metodos que emplean los datos codificados del Motion Retargeting se debe de correr el train.py en la misma carpeta del Motion Retargeting con la direccion de los datos de entrenamiento definiendo y reportar la direccion de guardado para los datos de entrenamiento y los esperados.
+For methods using Motion Retargeting encoded data run train.py in the same folder as Motion Retargeting with the address of the training data defining and reporting the save address for the training and expected data.
 
-Si se desea visualizar los resultados solo es necesario correr el comparepredictors.py y el finalobj.py para observar los efectos de la latencia vs el MSE.
+If you want to visualize the results you only need to run comparepredictors.py and finalobj.py to observe the effects of latency vs. MSE.
 
 
 Reference:
