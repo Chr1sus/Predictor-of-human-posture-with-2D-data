@@ -1,6 +1,6 @@
 <em> # Predictor-de-pose-humana-2D </em>
 <h4 align="center">
-:construction: Proyecto terminado 🔚:
+ Proyecto terminado 🔚:
 </h4>
 
 ![PYTHON](https://badgen.net/badge/python/3.7/blue?icon=github)
@@ -21,6 +21,7 @@ of a human body pose corrector using the motion retargeting as reference for the
 
 ![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/fourmethodsv2.gif?raw=true)
 
+![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/FINALOBJT.png)
  
 
 \## 📁 Acceso al proyecto
@@ -162,6 +163,7 @@ Para los metodos que emplean los datos codificados del Motion Retargeting se deb
 Si se desea visualizar los resultados solo es necesario correr el comparepredictors.py y el finalobj.py para observar los efectos de la latencia vs el MSE.
 
 
+Reference:
 
     
     
