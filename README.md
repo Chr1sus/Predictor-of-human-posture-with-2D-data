@@ -28,11 +28,11 @@ of a human body pose corrector using the motion retargeting as reference for the
 
 Para el proyecto se debe de instalar en un ambiente de conda los requisitos del requirement.txt
 
-  python3 -m venv env
+      python3 -m venv env
 
-  source env/bin/activate
+      source env/bin/activate
 
-  pip install -r requirements.txt
+      pip install -r requirements.txt
 
 
 Una vez creado el ambiente se procede a instalar los conjutos de datos y repositorios necesarios.
@@ -53,20 +53,20 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 
 📁 Modelos
 
-      |-ATTN
+      |-📁 ATTN
 
           |-ATTN.py
 
           |-seq2seq.py
 
-      |-GCN
+      |-📁 GCN
 
           |-GCN_DCT.py
 
           |-main_gcn.py
 
 
-      |-Q-DRNN
+      |-📁 Q-DRNN
 
           |-prediction_modelv2.py
 
@@ -74,7 +74,7 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 
 
 
-      |-UNET
+      |-📁 UNET
 
 
 
@@ -108,7 +108,7 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 
 📁 retrained_models
 
-      |-Q-DRNN_MODEL
+      |-📁 Q-DRNN_MODEL
 
          |-checkpoint
 
@@ -129,11 +129,11 @@ Una vez creado el ambiente se procede a instalar los conjutos de datos y reposit
 
 📁 tests
 
-      |-decoded_sequence (resultados del Aberman)
+      |-📁 decoded_sequence (resultados del Aberman)
 
-         |------>CMU-MOCAP
+           |-📁 CMU-MOCAP
 
-         |------>Penn-Action
+           |-📁 Penn-Action
 
       |-abermantest.py
 
