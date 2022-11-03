@@ -11,7 +11,10 @@ An aplication of human motion prediction using already existing models for two k
 of a human body pose corrector using the motion retargeting as reference for the performance.
 
 
-- `Funcionalidad 1`: Se adiciona el predictor de pose humana al motion retargeting generando un resultado que respeta el tamnno del esqueleto como de la perspectiva- `Funcionalidad 2`: Se generan datos de secuencia de movimiento con un predictor dentro del motion retargeting usando la representacion del movimiento del espacio dinamico latente- `Funcionalidad 3`: Se reentrena y evalua el mejor modelo y acercamiento para el motion retargeting- `Funcionalidad 4`: Se visualiza el efecto de la cantidad de cuadros de prediccion vs el porcentaje de error.
+- `Funcionalidad 1`: Se adiciona el predictor de pose humana al motion retargeting generando un resultado que respeta el tamnno del esqueleto como de la perspectiva
+- - `Funcionalidad 2`: Se generan datos de secuencia de movimiento con un predictor dentro del motion retargeting usando la representacion del movimiento del espacio dinamico latente
+- - `Funcionalidad 3`: Se reentrena y evalua el mejor modelo y acercamiento para el motion retargeting
+- - `Funcionalidad 4`: Se visualiza el efecto de la cantidad de cuadros de prediccion vs el porcentaje de error.
 
 
 ![This is an image](https://github.com/Chr1sus/Predictor-de-pose-humana-2D/blob/master/Results/gcnmethodsv2.gif?raw=true)
