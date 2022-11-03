@@ -24,11 +24,15 @@ of a human body pose corrector using the motion retargeting as reference for the
  
 
 \## 📁 Acceso al proyecto
+
 Para el proyecto se debe de instalar en un ambiente de conda los requisitos del requirement.txt
 
 -python3 -m venv env
+
 -source env/bin/activate
+
 -pip install -r requirements.txt
+
 
 Una vez creado el ambiente se procede a instalar los conjutos de datos y repositorios necesarios.
 
