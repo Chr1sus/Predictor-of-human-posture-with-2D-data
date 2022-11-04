@@ -11,8 +11,8 @@ from progress.bar import Bar
 from torch.autograd import Variable
 import wandb
 import os
-from loaddata import load_data_qdrcn
-from loaddata import norm
+from ops.loaddata import load_data_qdrcn
+from ops.loaddata import norm
 from GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
 
 #wandb.init(project="", entity=,resume=False) for wandb account

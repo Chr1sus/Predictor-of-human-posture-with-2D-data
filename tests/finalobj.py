@@ -8,74 +8,26 @@ import os, sys
 import time
 import h5py
 
-from loaddata import load_data_qdrcn as ld
-from loaddata import load_data_ as ld1
-from loaddata import velocity as v
-from loaddata import norm
+from ops.loaddata import load_data_qdrcn as ld
+from ops.loaddata import load_data_ as ld1
+from ops.loaddata import velocity as v
+from ops.loaddata import norm
 from scipy.ndimage.filters import gaussian_filter1d
-from networks import AutoEncoder2x, AutoEncoder3x
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 import csv
 #import common as config
-from vizu import viz_gcn as viz
-from vizu import creat_skeleton, viz_aberman
-from mat4py import loadmat
+from ops.vizu import viz_gcn as viz
+from ops.vizu import creat_skeleton, viz_aberman
 import matplotlib.pyplot as plt
-import loaddata as ld
+import ops.loaddata as ld
 import matplotlib.image as mpimg
 
-from GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
-'''
-saved_dir='/home/chrisus/Proyectofinal/GIT/Modelos/output/'
-    #Define and load saved models
-gcnmodel = GCN(input_feature=64, hidden_feature=30, p_dropout=0.5,
-                            num_stage=12, node_n=30)
+from Modelos.GCN.GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
 
-gcnmodel=torch.load(os.path.join(saved_dir,'GCN_DCT/gcn_dctv4.pth'))
-
-print('Load ')
-gcnmodel.eval()
-
-inc_data=np.load('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/input_aber00.npy')
-print('shape of data for testing ', np.shape(inc_data))
-test_penaction=np.zeros((32,64,15,2))
-for im in range(32):
-    test_penaction[im][:(32+im)]=inc_data[:(32+im)]
-#com_data,inc_data=ld.testing_data_1(test_path)
-#print(np.shape(com_data),end=' ')
-print('shape of input',np.shape(test_penaction))
-
-pose_input=ld.dataset_for_poses(test_penaction)
-pose_input=ld.norm(pose_input)
-n,frames,joints=np.shape(pose_input)
-dc,im=get_dct_matrix(64)
-gcntest=np.zeros((n,frames,joints))
-print(n,'veces')
-for m in range(n):
-    input=np.matmul(dc,pose_input[m])
-    input=np.transpose(input)
-    input_t=torch.from_numpy(input)
-    inputs = Variable(input_t).float()
-    out=gcnmodel(inputs.cuda())
-    pred=out.cpu().detach().numpy()
-    ploting=np.matmul(pred,im)
-    ploting=np.transpose(ploting)
-    gcntest[m]=ploting
-print(np.shape(gcntest))
-
-#np.save('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/finalobjt.npy',gcntest)
-# 
-inc_data=np.load('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/objt_00.npy')
-inc_data=ld.dataset_for_poses(inc_data)
-viz(inc_data[31][63])
-inc_data=np.load('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/input_aber00.npy')
-inc_data=ld.dataset_for_poses([inc_data])
-print(np.shape(inc_data))
-viz(inc_data[0][63])'''
-target_aberman=np.load('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/target_final_gt00.npy')
-trupred=np.load('/home/chrisus/Proyectofinal/Motion/disptec-2020/tools/motion_predictor/output/final/testing/fffff.npy')
+target_aberman=np.load('target_data_dir')
+trupred=np.load('retrained_model')
 print('trupred shape,',np.shape(trupred))
 samp,fram,_,_=np.shape(target_aberman)
 for n in range(samp):

@@ -15,8 +15,8 @@ import h5py
 import numpy as np
 from six.moves import xrange # pylint: disable=redefined-builtin
 import tensorflow as tf
-from loaddata import load_data_ as ld
-from loaddata import norm
+from ops.loaddata import load_data_ as ld
+from ops.loaddata import norm
 import prediction_modelv2 as prediction_model
 
 
