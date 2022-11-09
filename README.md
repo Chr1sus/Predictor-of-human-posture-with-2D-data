@@ -1,6 +1,6 @@
-<em> # Predictor-de-pose-humana-2D </em>
+<em> # Predictor-of-human-posture-with-2D-data </em>
 <h4 align="center">
- Proyecto terminado 🔚:
+Predictor-of-human-posture-with-2D-data 🔚:
 </h4>
 
 ![PYTHON](https://badgen.net/badge/python/3.7/blue?icon=github)
