@@ -156,7 +156,17 @@ For methods using Motion Retargeting encoded data run train.py in the same folde
 If you want to visualize the results you only need to run comparepredictors.py and finalobj.py to observe the effects of latency vs. MSE.
 
 
-Reference:
+\## Citation
+
+      @thesis{pred2Dmotion, 
+              title={Predictor de movimiento humano 2D usando visión por computador},
+              author={Arguedas Maceo, Christian},
+              year= 2022,
+              month=November,
+              type=(licenciature)
+              school={Escuela de Ingeniería en Electrónica}
+              institute={Instituto Tecnológico de Costa Rica}
+              } 
 
     
     
