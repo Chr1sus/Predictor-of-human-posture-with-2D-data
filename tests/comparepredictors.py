@@ -33,12 +33,12 @@ import tensorflow as tf
 import ops.loaddata as ld
 from mat4py import loadmat
 '''Import models'''
-from Modelos.ATTN.ATTN import Encoder,EncoderLayer,Decoder,DecoderLayer, MultiHeadAttentionLayer, Seq2Seq
-from Modelos.GCN.GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
-import Modelos.QDRNN.prediction_modelv2 as prediction_model
-from Modelos.UNET.seg_data_ import SegmentationDataset
-from Modelos.UNET.unet import UNet
-import Modelos.UNET.config as config
+from Models.ATTN.ATTN import Encoder,EncoderLayer,Decoder,DecoderLayer, MultiHeadAttentionLayer, Seq2Seq
+from Models.GCN.GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
+import Models.QDRNN.prediction_modelv2 as prediction_model
+from Models.UNET.seg_data_ import SegmentationDataset
+from Models.UNET.unet import UNet
+import Models.UNET.config as config
 import ops.vizu as vizu
 from ops.utils import get_data,norm_matrix,transp,norm_from_spine, \
     norm_from_spine2,des_norm_matrix,des_transp,x_y_c,x_y_one,   \

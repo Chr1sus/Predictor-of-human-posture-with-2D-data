@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 import ops.loaddata as ld
 import matplotlib.image as mpimg
 
-from Modelos.GCN.GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
+from Models.GCN.GCN_DCT import get_dct_matrix,AccumLoss,mpjpe_error_p3d,GCN,lr_decay
 
 target_aberman=np.load('target_data_dir')
 trupred=np.load('retrained_model')

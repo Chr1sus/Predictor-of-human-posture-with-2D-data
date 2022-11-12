@@ -2,8 +2,8 @@ from itertools import count
 import numpy as np
 import os,sys
 import torch
-import Modelos.UNET.config as config
-from Modelos.UNET.seg_data_ import SegmentationDataset
+import Models.UNET.config as config
+from Models.UNET.seg_data_ import SegmentationDataset
 from torch.utils.data import DataLoader
 from torchvision import transforms
 import matplotlib.pyplot as plt
