@@ -46,9 +46,9 @@ Once the environment is created, the necessary data sets and repositories are in
 -![Motion Retargeting:](https://github.com/ChrisWu1997/2D-Motion-Retargeting)
 
 
-📁 Entregables
+📁 Deliverables
 
-      |-Tabla_comparativa.pdf ======:Tabla comparativa del primer objetivo específico.
+      |-Tabla_comparativa.pdf 
 
 
 📁 Modelos
@@ -86,7 +86,7 @@ Once the environment is created, the necessary data sets and repositories are in
 
           |-unet.py
 
-      |-pruebas.py (script de experimentos)
+      |-pruebas.py 
 
 
 📁 Results
@@ -96,9 +96,9 @@ Once the environment is created, the necessary data sets and repositories are in
 
 📁 ops
 
-      |-loaddata.py (script para leer datos)
+      |-loaddata.py 
 
-      |-train.py (script para producir experimentos con el Aberman)
+      |-train.py 
 
       |-tils.py
 
@@ -129,17 +129,25 @@ Once the environment is created, the necessary data sets and repositories are in
 
 📁 tests
 
-      |-📁 decoded_sequence (resultados del Aberman)
+      |-📁 decoded_sequence 
 
            |-📁 CMU-MOCAP
 
            |-📁 Penn-Action
+           
+      
+      |-📁 parameters_selection
+
+           |-seq2seq.py
+
+           |-train_Unet.py
 
       |-abermantest.py
 
       |-comparepredictors.py
 
       |-finalobj
+
 
 
 
